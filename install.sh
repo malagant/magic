@@ -20,6 +20,10 @@ activateEnvironment() {
 	flox activate -e $FLOX_ENV_NAME
 }
 
+installRust() {
+	rustup install stable
+}
+
 if ! command -v flox &>/dev/null; then
 	echo "flox could not be found, installing it"
 	installFlox
@@ -29,3 +33,5 @@ else
 	setupFlox
 	activateEnvironment
 fi
+echo "Installing rust"
+installRust
