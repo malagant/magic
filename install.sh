@@ -25,5 +25,6 @@ if ! command -v flox &>/dev/null; then
 	setupFlox
 else
 	echo "flox is already installed. Skipping installation"
+	setupFlox
 	activateEnvironment
 fi
