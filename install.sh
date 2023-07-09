@@ -12,7 +12,8 @@ installFlox() {
 
 # Setup flox and all
 setupFlox() {
-	flox create -e $FLOX_ENV_NAME
+	flox create -e $FLOX_ENV_NAME || true
+	flox install -e $FLOX_ENV_NAME git
 }
 
 activateEnvironment() {
