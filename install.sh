@@ -3,7 +3,7 @@ set -x
 set -e
 
 FLOX_ENV_NAME=macos
-
+PACKAGES_TO_INSTALL="git tmux neovim ripgrep rustup"
 # Download and nstall flox binary
 installFlox() {
 	curl -o flox.aarch64-darwin.pkg 'https://floxdev.com/downloads/osx/flox.aarch64-darwin.pkg'
@@ -13,7 +13,7 @@ installFlox() {
 # Setup flox and all
 setupFlox() {
 	flox create -e $FLOX_ENV_NAME || true
-	flox install -e $FLOX_ENV_NAME git
+	flox install -e $FLOX_ENV_NAME "$PACKAGES_TO_INSTALL"
 }
 
 activateEnvironment() {
