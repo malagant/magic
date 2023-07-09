@@ -3,7 +3,7 @@ set -x
 set -e
 
 FLOX_ENV_NAME=macos
-PACKAGES_TO_INSTALL="git tmux neovim ripgrep rustup"
+PACKAGES_TO_INSTALL="git zsh tmux neovim ripgrep rustup home-manager zellij"
 # Download and nstall flox binary
 installFlox() {
 	curl -o flox.aarch64-darwin.pkg 'https://floxdev.com/downloads/osx/flox.aarch64-darwin.pkg'
