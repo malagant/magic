@@ -1,6 +1,6 @@
-# Setup magically new MacOS Developer Machines
+# WIP: Setup magically new MacOS Developer Machines
 
-## Install with `sh <(curl -iL https://raw.githubusercontent.com/malagant/magic/main/install.sh)`
+## Install with `sh <(curl -fsSL https://raw.githubusercontent.com/malagant/magic/main/install.sh)`
 
 ## What install.sh does
 
